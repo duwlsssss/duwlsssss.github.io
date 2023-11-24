@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+#three-canvas {
+	position: fixed; /*스크롤해도 그대로*/
+	left: 0;
+	top: 0;
+	z-index: -1; /*html 뒤에 캔버스 놓음*/
+	background: #D2D2FF ;
+}
+.view-item {
+	display: flex;
+	margin: 30px;
+}
+.view-item:nth-child(even) .canvas-placeholder { /*짝수번만 오른쪽 정렬*/
+	order: 1;
+}
+.canvas-placeholder {
+	width: 300px;
+	height: 200px;
+	margin-right: 30px;
+	border: none;
+}
